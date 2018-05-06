@@ -1,7 +1,7 @@
 # E-Commerce Group 4 Web Project
 ## By Peter Jerchaflie, Jon-Kristen Tison, Richard Ramos
 ## This entire project folder should be placed within the xampp/htdocs/ directory.
-## [After xampp is set up, the webpage can be viewed by visiting this link](http://localhost/e-commerce-group-4/about.html)
+## [After xampp is set up, the webpage can be viewed by visiting this link](http://localhost/e-commerce-group-4/)
 ----
 # Database setup
 ### The mySQL database should have a database called 'group4'.
