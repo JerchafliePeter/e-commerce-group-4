@@ -5,9 +5,7 @@ error_reporting (E_ALL ^ E_NOTICE);
 <html lang="en">
 <head>
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
 <title>PeerME - Sign Up</title>
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -101,7 +99,7 @@ if ($_POST['submitbtn']){
                 }
             $password =md5("8Kdo9H3".$password);    //hashes the entered password with a salt
             $sql ="INSERT INTO `users` (`EMAIL`, `USERNAME`, `PASSWORD`) VALUES ('$email', '$user', '$password')";    //stores sql command in $sql
-            mysqli_query($link, $sql);    //queries the database for a matching username
+            mysqli_query($link, $sql);    //adds row to database
             
                             echo "$form You have created user: <b>$user</b>.";
             }
