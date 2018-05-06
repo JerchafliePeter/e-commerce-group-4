@@ -8,7 +8,7 @@ error_reporting (E_ALL ^ E_NOTICE);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-<title>Member System - Sign up </title>
+<title>PeerME - Sign Up</title>
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -43,7 +43,7 @@ $form ="<form action= './signup.php' method='post'>
               <a class='nav-link' href='contact.html'>Contact</a>
             </li>
             <li class='nav-item'>
-            <a class='nav-link'href='portfolio-4-col.html'>Courses</a>
+            <a class='nav-link'href='courses.html'>Courses</a>
         </li>
         <li class='nav-item'>
             <a class='nav-link' href='faq.html'>FAQ</a>
