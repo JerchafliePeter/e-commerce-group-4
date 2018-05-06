@@ -5,10 +5,8 @@ error_reporting (E_ALL ^ E_NOTICE);
 <html lang="en">
 <head>
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-<title>Member System - Login</title>
+
+<title>PeerME - Sign In</title>
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -43,7 +41,7 @@ $form ="<form action= './login.php' method='post'>
               <a class='nav-link' href='contact.html'>Contact</a>
             </li>
             <li class='nav-item'>
-            <a class='nav-link' href='portfolio-4-col.html'>Courses</a>
+            <a class='nav-link' href='courses.html'>Courses</a>
         </li>
         <li class='nav-item'>
             <a class='nav-link' href='faq.html'>FAQ</a>
@@ -104,13 +102,11 @@ if ($_POST['loginbtn']){
             
             if (mysqli_num_rows($result) > 0){      //checks if a matching username is found
                 while($row = mysqli_fetch_assoc($result)){
-               // $row=$result->fetch_assoc();    //stores the row of the matching username in $row
                 $dbuser =$row['USERNAME'];      //stores username from database in $dbuser
                 $dbpass =$row['PASSWORD'];      //stores the password from the database in $dbpass
            
           
                 if($password== $dbpass){
-                    //set session info
 
                     echo "$form You have been logged in as: <b>$dbuser</b>.";
                 }
